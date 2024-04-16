@@ -24,7 +24,15 @@ export default function Model() {
   const [smallRotation, setSmallRotation] = useState(0)
   const [largeRotation, setLargeRotation] = useState(0)
 
+  const [loadedDocument, setLoadedDocument] = useState<Document | undefined>(
+    undefined,
+  )
+
   const timeline = gsap.timeline()
+
+  useEffect(() => {
+    setLoadedDocument(document)
+  }, [])
 
   useEffect(() => {
     if (size === 'large') {
@@ -95,7 +103,10 @@ export default function Model() {
                 right: 0,
                 overflow: 'hidden',
               }}
-              eventSource={document.querySelector('body') as HTMLElement}
+              eventSource={
+                loadedDocument &&
+                (document.querySelector('body') as HTMLElement)
+              }
             >
               <View.Port />
             </Canvas>
