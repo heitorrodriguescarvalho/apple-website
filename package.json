@@ -1,0 +1,36 @@
+{
+  "name": "apple-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.0",
+    "@react-three/drei": "^9.105.3",
+    "@react-three/fiber": "^8.16.1",
+    "@sentry/nextjs": "^7.110.1",
+    "gsap": "^3.12.5",
+    "next": "14.1.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "three": "^0.163.0"
+  },
+  "devDependencies": {
+    "@react-three/eslint-plugin": "^0.1.1",
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4",
+    "postcss": "^8",
+    "prettier-plugin-tailwindcss": "^0.5.13",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
